@@ -167,13 +167,6 @@ console.log(miNombre.length)
 
 
 
-
-
-
-
-
-
-
 let textoGrande = 'Mi DNI es : 1234567'
 
 let primerDigito = textoGrande.charAt(12)
@@ -316,58 +309,6 @@ console.log(devolverNombre(persona3))
 
 // si un numero es multiplo de 3 imprime fizz y si el multiplo de 5 imprime buzz , y si es multiplo de 3 y 5 , imprime fizzbuzz
 
-
-// fizzbuzz
-
-// let numb = 1;
-
-// while(numb <101){
-//   (numb%3===0 && !(numb%3===0 && numb%5===0 )&& console.log('Fizz \n',numb))||
-//     (numb%5===0 && !(numb%3===0 && numb%5===0 )&& console.log('Buzz\n',numb))||
-//   (numb%3===0 && numb%5===0 && console.log('FizzBuzz\n',numb)
-//  )
-//    numb++
-//}
-
-
-function fizzbuzz(numero) {
-
-  let condicion = (!(numero % 3 === 0 && numero % 5 === 0))
-
-  if ((numero % 3 === 0) && condicion ) {
-    return 'Fizz \n'
-  }
-  if ((numero % 5 === 0) && condicion) {
-    return 'Buzz \n'
-  }
-  if ((numero % 3 === 0) && (numero % 5 === 0)) {
-    return 'FizzBuzz \n'
-  }
-  return ''
-
-}
-
-
-function fizzbuzz2(numero) {
-  let condicion = (!(numero % 3 === 0 && numero % 5 === 0))
-
-  if ((numero % 3 === 0) && (numero % 5 === 0)) {
-    return 'FizzBuzz \n'
-  }
-  else if ((numero % 3 === 0) && condicion ) {
-    return 'Fizz \n'
-  }
-  else if ((numero % 5 === 0) && condicion) {
-    return 'Buzz \n'
-  }
-
-}
-
-
-for (let indice = 0; indice < 100; indice += 1) {
-  let resultado = `${indice} -> ${fizzbuzz2(indice)}`
-  console.log(resultado)
-}
 
 
 
