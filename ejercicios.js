@@ -10,12 +10,17 @@
 
 
 function fizzbuzz( numero = 0 ) { 
+
+
+  if ( ( numero % 3 === 0 ) && ( numero % 5 === 0 ) ) {
+    return 'fizzbuzz'
+  }
   //primer caso -> 3
   // si el numero es multiplo de 3 , entonces la funcion debera devolver(return) 'fizz'
   // una condicion es basicamente -> si....entonces....
   // if(aca dentro va la condicion que sera verdadera(true) o sera falsa(false)) {aca escribo el codigo que necesito}
 
-  
+
 
   if (numero % 3 === 0) {
       return 'fizz'
@@ -30,9 +35,7 @@ function fizzbuzz( numero = 0 ) {
   //tercer caso -> 15
   // si el numero es multiplo de 5 , entonces la funcion debera devolver(return) 'fizzbuzz'
   
-  if ( ( numero % 3 === 0 ) && ( numero % 5 === 0 ) ) {
-    return 'fizzbuzz'
-  }
+  
 
 }
 
