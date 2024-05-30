@@ -1,5 +1,4 @@
-
-// fizz buzz
+//  1. fizz buzz
 
 // si un numero es multiplo de 3 imprime fizz y si el multiplo de 5 imprime buzz , y si es multiplo de 3 y 5 , imprime fizzbuzz
 
@@ -53,5 +52,63 @@ console.log( probarCinco )
 console.log( probarQuince )
 console.log( probarVeinte )
 console.log( probarVeintidos )
+
+
+// otra manera de hacerlo 
+
+// let numb = 1;
+
+// while ( numb < 101 ) {
+//   ( numb % 3 === 0 && !( numb % 3 === 0 && numb % 5 === 0 ) && console.log( 'Fizz \n', numb ) ) ||
+//     ( numb % 5 === 0 && !( numb % 3 === 0 && numb % 5 === 0 ) && console.log( 'Buzz\n', numb ) ) ||
+//     ( numb % 3 === 0 && numb % 5 === 0 && console.log( 'FizzBuzz\n', numb )
+//     )
+//   numb++
+// }
+
+
+// 2.Escribe una función que reciba un número y devuelva su cuadrado.
+
+// vamos acrear una funcion , que reciba como parametro un numero y devuleva el resultado
+
+// vamos aprobar con 2,3,4
+// si pruebo con 2 , deberia esperar 4
+// si pruebo con 3, deberia esperar 9
+// si pruebo con 4, deberia esperar 16
+
+
+function cuadrado( numero = 0 ) { 
+  return numero ** 2
+}
+
+const probarCuadradoDos = cuadrado( 2 )
+const probarCuadradoTres = cuadrado( 3 )
+const probarCuadradoCuatro = cuadrado( 4 )
+
+console.log( probarCuadradoDos )
+console.log( probarCuadradoTres )
+console.log( probarCuadradoCuatro )
+
+
+// ahora con la potencia (n)
+
+
+function potencia( numero = 0, potencia=0 ) {
+  return numero ** potencia
+}
+
+const probarPotenciaDos = potencia( 2,3 )
+const probarPotenciaTres = potencia( 3,2 )
+const probarPotenciaCuatro = potencia( 4,1 )
+
+console.log( probarPotenciaDos )
+console.log( probarPotenciaTres )
+console.log( probarPotenciaCuatro )
+
+
+
+
+
+
 
 
