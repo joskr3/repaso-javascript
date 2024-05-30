@@ -177,7 +177,6 @@ function hallarElParEimpar( ...numeros ) {
   for ( const numero of numeros ) {
     // condicion para saber si un numero es par
     let par = numero % 2 === 0
-
     // condicion para saber si un numero es impar
     let impar = numero % 2 !== 0
     // primer caso , hallar el primer numero par
