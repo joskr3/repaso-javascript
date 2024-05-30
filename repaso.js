@@ -46,15 +46,12 @@ let objetoSimple = {
   }
 }
 
-
 for ( let indice = 0; indice < 10; indice = indice + 1 ) {
   console.log(indice)
 }
 
 console.log('#################################')
 let arrayDesdeObjeto = objetoSimple.llave6
-
-
 
 for ( let indice = 0; indice < arrayDesdeObjeto.length; indice++) { 
   console.log(arrayDesdeObjeto[indice])
@@ -65,7 +62,6 @@ for (const elemento of arrayDesdeObjeto) {
     console.log(elemento)
 }
 
-
 let numeroDesdeObjeto = objetoSimple.llave2
 let contador = 0
 while ( contador <= numeroDesdeObjeto ) { 
@@ -73,12 +69,9 @@ while ( contador <= numeroDesdeObjeto ) {
   contador++
 }
 
-
 console.log( '##############################' )
 
 // @ts-ignore
-
-
 let adivinarNumero = 20
 let random2 = 0
 let numeroDeIntentos = 0
@@ -89,11 +82,7 @@ while (adivinarNumero !== random2) {
   numeroDeIntentos++
   //console.log( random2 )
 }
-
-
 console.log(`El numero de intentos fue : ${numeroDeIntentos}`)
-
-
 
 function saludarAmigos (saludo='') { 
   return `Hola, este es mi saludo : ${saludo}`
@@ -114,13 +103,10 @@ const adivinarNumero2 = ( numero = 0, random = 0, numeroIntentos = 0 ) => {
   return resultadoIntentos
 }
 
-
 console.log( adivinarNumero2( 5 ) )
 console.log( adivinarNumero2( 5 ) )
 console.log( adivinarNumero2( 5 ) )
 console.log( adivinarNumero2( 5 ) )
-
-
 
 function adivinarNumero3( numero = 0, random = 0, numeroIntentos = 0 ) { 
   while ( numero !== random ) {
