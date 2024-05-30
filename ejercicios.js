@@ -107,6 +107,35 @@ console.log( probarPotenciaCuatro )
 
 
 
+// 3. Escribe una función que reciba dos números y devuelva el mayor.
+
+// vamos a crear una funcion que reciba dos paramtros y me devuelva el mayor y el menor
+
+// vamos aprobar con 2 y 5 , -9y0, 3.5,-1.7
+
+
+const mayorYmenor = (primerNumero = 0, segundoNumero = 0) => { 
+  let resultado = ''
+  if (primerNumero > segundoNumero) {
+    resultado = `El numero ${primerNumero} es  mayor entre -> ${primerNumero} y ${segundoNumero}`
+  } else {
+    resultado =  `El numero ${segundoNumero} es  mayor entre -> ${primerNumero} y ${segundoNumero}`
+  }
+  resultado = `El numero ${segundoNumero} es  mayor entre -> ${primerNumero} y ${segundoNumero}`
+
+  return resultado
+}
+
+const primeraPruebaMayorYmenor = mayorYmenor( 2, 5 )
+const segundaPruebaMayorYmenor = mayorYmenor( -9, 0 )
+const terceraPruebaMayorYmenor = mayorYmenor( 3.5, -1.7 )
+
+console.log( primeraPruebaMayorYmenor )
+console.log( segundaPruebaMayorYmenor )
+console.log(terceraPruebaMayorYmenor)
+
+
+
 
 
 
